@@ -59,6 +59,19 @@ resources: {}
   #  cpu: 100m
   #  memory: 128Mi
 
+## Init containers, this could be useful for some initialization tasks, e.g.
+## to generate a Java keystore/truststore.
+## Ref: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
+initContainers: []
+
+## Additional volumes.
+## Ref: https://kubernetes.io/docs/concepts/storage/volumes/
+extraVolumes: []
+
+## Additional volumes to be mounted.
+## Ref: https://kubernetes.io/docs/concepts/storage/volumes/
+extraVolumeMounts: []
+
 ## Custom pod annotations
 podAnnotations: {}
 
